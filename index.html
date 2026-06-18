@@ -21,7 +21,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .hero-eyebrow{font-size:10px;letter-spacing:6px;color:var(--red);font-weight:900;margin-bottom:4px;text-transform:uppercase;}
 .hero-title{font-family:'Anton',sans-serif;font-size:clamp(38px,11vw,84px);color:var(--ink);letter-spacing:-1px;line-height:0.88;text-transform:uppercase;}
 .hero-title .ell{color:var(--red);}
-.hero-goodbye{font-family:'Anton',sans-serif;font-size:clamp(16px,4.5vw,34px);color:var(--red);letter-spacing:-.5px;font-style:italic;margin-top:3px;display:block;}
+
 .hero-sub{font-size:11px;color:var(--ink3);margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
 .hero-sub-dot{width:4px;height:4px;background:var(--red);border-radius:50%;display:inline-block;flex-shrink:0;}
 .hero-links{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
@@ -80,20 +80,20 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .count-info{text-align:center;font-size:12px;color:var(--ink3);margin-bottom:10px;}
 
 /* 테이블 */
-.table-wrap{max-width:760px;margin:0 auto;background:white;border-top:2px solid var(--red);border-bottom:2px solid var(--red);}
-.table-header{display:grid;grid-template-columns:50px 18px 36px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 62px 22px;background:#111;padding:8px 16px;gap:2px;align-items:center;}
-.th{font-size:8px;font-weight:900;color:white;text-align:center;letter-spacing:.8px;text-transform:uppercase;}
-.row{display:grid;grid-template-columns:50px 18px 36px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 62px 22px;padding:5px 16px;gap:2px;border-top:1px solid rgba(0,0,0,0.06);align-items:start;}
+.table-wrap{max-width:760px;margin:0 auto;background:white;border-top:2px solid var(--red);border-bottom:2px solid var(--red);overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.table-header{display:grid;grid-template-columns:36px 22px 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 54px 18px;background:#111;padding:8px 10px;gap:2px;align-items:center;min-width:480px;}
+.th{font-size:7px;font-weight:900;color:white;text-align:center;letter-spacing:.3px;text-transform:uppercase;}
+.row{display:grid;grid-template-columns:36px 22px 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 54px 18px;padding:5px 10px;gap:2px;border-top:1px solid rgba(0,0,0,0.06);align-items:start;min-width:480px;}
 .row.hidden{display:none;}
 .row.row-seungju{background:rgba(212,43,43,0.05);}
 .row.row-jihu   {background:rgba(212,43,43,0.03);}
 .row.row-wujin  {background:rgba(212,43,43,0.02);}
 .row.row-yoonu  {background:rgba(212,43,43,0.015);}
-.cell{font-size:9px;color:var(--ink);text-align:center;line-height:1.4;}
-.cell.date{font-weight:900;font-size:9px;text-align:left;font-family:'Anton',sans-serif;letter-spacing:.5px;}
-.day-sat{color:#1a3a8a;font-weight:900;}.day-sun{color:var(--red);font-weight:900;}.day-wkd{color:var(--ink3);}
-.cell.time{font-size:8px;color:var(--ink3);}
-.actor-badge{font-size:8px;font-weight:700;padding:1px 4px;border-radius:2px;display:inline-block;line-height:1.3;white-space:normal;text-align:center;vertical-align:top;}
+.cell{font-size:8.5px;color:var(--ink);text-align:center;line-height:1.4;}
+.cell.date{font-weight:700;font-size:9px;text-align:left;letter-spacing:.2px;}
+.day-sat{color:#1a3a8a;font-weight:900;font-size:7.5px;}.day-sun{color:var(--red);font-weight:900;font-size:7.5px;}.day-wkd{color:var(--ink3);font-size:7.5px;}
+.cell.time{font-size:7.5px;color:var(--ink3);}
+.actor-badge{font-size:7.5px;font-weight:700;padding:1px 3px;border-radius:2px;display:inline-block;line-height:1.3;white-space:nowrap;text-align:center;vertical-align:top;}
 .badge-seungju  {background:#fdecea;color:#b51f1f;border:1px solid #f5b4b0;}
 .badge-jihu     {background:#fce2e2;color:#9e1818;border:1px solid #f0a0a0;}
 .badge-wujin    {background:#f8d8d8;color:#8a1010;border:1px solid #e89090;}
@@ -115,10 +115,10 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .badge-gimyeonguk  {background:#ebebeb;color:#222;border:1px solid #ccc;}
 .badge-imseonu     {background:#e5e5e5;color:#1a1a1a;border:1px solid #bbb;}
 .badge-gomin       {background:#dfdfdf;color:#111;border:1px solid #aaa;}
-.fb{display:block;background:var(--red);color:white;font-size:6px;font-weight:900;padding:1px 3px;border-radius:1px;margin-top:2px;text-align:center;letter-spacing:.5px;}
+.fb{display:block;background:var(--red);color:white;font-size:5.5px;font-weight:900;padding:1px 2px;border-radius:1px;margin-top:1px;text-align:center;letter-spacing:0px;}
 .tba{font-size:8px;color:#bbb;font-style:italic;}
-.month-divider{padding:8px 16px;background:var(--red);font-size:11px;font-weight:900;color:white;letter-spacing:4px;text-transform:uppercase;}
-.no-show{padding:5px 16px;background:rgba(0,0,0,.02);font-size:9.5px;color:#ccc;text-align:center;border-top:1px solid rgba(0,0,0,.04);font-style:italic;}
+.month-divider{padding:8px 10px;background:var(--red);font-size:11px;font-weight:900;color:white;letter-spacing:4px;text-transform:uppercase;min-width:480px;}
+.no-show{padding:5px 10px;background:rgba(0,0,0,.02);font-size:9.5px;color:#ccc;text-align:center;border-top:1px solid rgba(0,0,0,.04);font-style:italic;min-width:480px;}
 .copy-btn{background:none;border:none;cursor:pointer;font-size:13px;padding:1px;display:flex;align-items:center;justify-content:center;width:100%;}
 .seat-cell{display:flex;flex-direction:column;gap:2px;}
 .seat-input{width:100%;font-size:8px;padding:2px;border:1.5px solid #ddd;border-radius:2px;background:white;color:var(--ink);font-family:'Noto Sans KR',sans-serif;text-align:center;}
@@ -134,8 +134,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .counting-box{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:2px;}
 .count-card{flex:1;min-width:52px;max-width:85px;background:var(--bg3);border-radius:2px;padding:6px 3px;text-align:center;border:1px solid var(--border);}
 .count-card .cnt-name{font-size:8.5px;font-weight:700;margin-bottom:2px;}
-.count-card .cnt-num{font-size:20px;font-weight:900;line-height:1;color:var(--red);}
-.count-card .cnt-label{font-size:7.5px;color:var(--ink3);}
+.count-card .cnt-num{font-size:18px;font-weight:900;line-height:1;color:var(--red);}
+.count-card .cnt-label{font-size:7px;color:var(--ink3);letter-spacing:-.2px;}
 .cnt-total-box{display:flex;justify-content:center;margin:10px 0 4px;}
 .cnt-total-card{background:var(--red);border-radius:3px;padding:10px 32px;text-align:center;}
 .cnt-total-card .cnt-name{font-size:10px;font-weight:900;color:rgba(255,255,255,.7);letter-spacing:2px;margin-bottom:2px;}
@@ -192,11 +192,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .footer{text-align:center;font-size:9.5px;color:#bbb;margin-top:14px;line-height:1.8;max-width:760px;margin-left:auto;margin-right:auto;padding:0 16px;}
 
 @media(min-width:640px){
-  .table-header{grid-template-columns:70px 22px 42px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 86px 24px;padding:9px 16px;gap:3px;}
-  .row{grid-template-columns:70px 22px 42px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 86px 24px;padding:7px 16px;gap:3px;}
+  .table-header{grid-template-columns:52px 26px 38px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 86px 24px;padding:9px 16px;gap:3px;}
+  .row{grid-template-columns:52px 26px 38px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 86px 24px;padding:7px 16px;gap:3px;}
   .th{font-size:10px;}.cell{font-size:11px;}.cell.date{font-size:11px;}.cell.time{font-size:10px;}
   .actor-badge{font-size:10px;padding:2px 5px;display:inline-block;text-align:center;}.fb{font-size:7.5px;display:block;}
-  .count-card .cnt-name{font-size:10px;}.count-card .cnt-num{font-size:24px;}
+  .count-card .cnt-name{font-size:10px;}.count-card .cnt-num{font-size:22px;}
 }
 </style>
 </head>
@@ -206,7 +206,6 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   <div class="hero-inner">
     <div class="hero-eyebrow">MUSICAL</div>
     <div class="hero-title">BILLY<br><span class="ell">ELLIOT</span></div>
-    <span class="hero-goodbye">Goodbye!</span>
     <div class="hero-sub">
       <span>2026.04.12 ~ 2026.07.26</span><span class="hero-sub-dot"></span>
       <span>블루스퀘어 우리은행홀</span><span class="hero-sub-dot"></span>
@@ -288,7 +287,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 
 <div class="table-wrap">
   <div class="table-header">
-    <div class="th">날짜</div><div class="th">요</div><div class="th">시간</div>
+    <div class="th">날짜</div><div class="th">요일</div><div class="th">시간</div>
     <div class="th">빌리</div><div class="th">마이클</div><div class="th">데비</div>
     <div class="th">Mrs.윌킨슨</div><div class="th">아빠</div><div class="th">할머니</div><div class="th">성인빌리</div>
     <div class="th">내 좌석</div><div class="th">복사</div>
@@ -1794,50 +1793,50 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   <div class="counting-section">
     <div class="cgl">빌리</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#b51f1f;">김승주</div><div class="cnt-num"><span id="cnt-seungju">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#9e1818;">박지후</div><div class="cnt-num"><span id="cnt-jihu">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#8a1010;">김우진</div><div class="cnt-num"><span id="cnt-wujin">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#760808;">조윤우</div><div class="cnt-num"><span id="cnt-yoonu">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#b51f1f;">김승주</div><div class="cnt-num"><span id="cnt-seungju">0</span></div><div class="cnt-label" id="lbl-seungju">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#9e1818;">박지후</div><div class="cnt-num"><span id="cnt-jihu">0</span></div><div class="cnt-label" id="lbl-jihu">/ 23회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#8a1010;">김우진</div><div class="cnt-num"><span id="cnt-wujin">0</span></div><div class="cnt-label" id="lbl-wujin">/ 25회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#760808;">조윤우</div><div class="cnt-num"><span id="cnt-yoonu">0</span></div><div class="cnt-label" id="lbl-yoonu">/ 24회</div></div>
     </div>
     <div class="cgl">마이클</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#1a3a8a;">이서준</div><div class="cnt-num"><span id="cnt-iseojun">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#142e78;">이루리</div><div class="cnt-num"><span id="cnt-iruree">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#0e2268;">김효빈</div><div class="cnt-num"><span id="cnt-hyobin">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#081858;">지윤호</div><div class="cnt-num"><span id="cnt-yunho">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#1a3a8a;">이서준</div><div class="cnt-num"><span id="cnt-iseojun">0</span></div><div class="cnt-label" id="lbl-iseojun">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#142e78;">이루리</div><div class="cnt-num"><span id="cnt-iruree">0</span></div><div class="cnt-label" id="lbl-iruree">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#0e2268;">김효빈</div><div class="cnt-num"><span id="cnt-hyobin">0</span></div><div class="cnt-label" id="lbl-hyobin">/ 24회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#081858;">지윤호</div><div class="cnt-num"><span id="cnt-yunho">0</span></div><div class="cnt-label" id="lbl-yunho">/ 22회</div></div>
     </div>
     <div class="cgl">데비</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#1a6a34;">김예은</div><div class="cnt-num"><span id="cnt-kimyeon">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#145a28;">박예솔</div><div class="cnt-num"><span id="cnt-bagheesol">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#0e4a20;">김서윤</div><div class="cnt-num"><span id="cnt-kimseoyun">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#1a6a34;">김예은</div><div class="cnt-num"><span id="cnt-kimyeon">0</span></div><div class="cnt-label" id="lbl-kimyeon">/ 33회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#145a28;">박예솔</div><div class="cnt-num"><span id="cnt-bagheesol">0</span></div><div class="cnt-label" id="lbl-bagheesol">/ 32회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#0e4a20;">김서윤</div><div class="cnt-num"><span id="cnt-kimseoyun">0</span></div><div class="cnt-label" id="lbl-kimseoyun">/ 33회</div></div>
     </div>
     <div class="cgl">Mrs. 윌킨슨</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#a81a50;">최정원</div><div class="cnt-num"><span id="cnt-jeongsuwon">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#90143e;">전수미</div><div class="cnt-num"><span id="cnt-jeonsoomi">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#a81a50;">최정원</div><div class="cnt-num"><span id="cnt-jeongsuwon">0</span></div><div class="cnt-label" id="lbl-jeongsuwon">/ 62회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#90143e;">전수미</div><div class="cnt-num"><span id="cnt-jeonsoomi">0</span></div><div class="cnt-label" id="lbl-jeonsoomi">/ 61회</div></div>
     </div>
     <div class="cgl">아빠</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#8a5c00;">조정근</div><div class="cnt-num"><span id="cnt-choijeonggeun">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#784e00;">최동원</div><div class="cnt-num"><span id="cnt-choitongwon">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#8a5c00;">조정근</div><div class="cnt-num"><span id="cnt-choijeonggeun">0</span></div><div class="cnt-label" id="lbl-choijeonggeun">/ 50회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#784e00;">최동원</div><div class="cnt-num"><span id="cnt-choitongwon">0</span></div><div class="cnt-label" id="lbl-choitongwon">/ 73회</div></div>
     </div>
     <div class="cgl">할머니</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#5a1a8a;">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#4a1478;">민경옥</div><div class="cnt-num"><span id="cnt-mingyeongok">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#3c0e68;">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#5a1a8a;">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label" id="lbl-parkjungja">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#4a1478;">민경옥</div><div class="cnt-num"><span id="cnt-mingyeongok">0</span></div><div class="cnt-label" id="lbl-mingyeongok">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#3c0e68;">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label" id="lbl-honghooni">/ 41회</div></div>
     </div>
     <div class="cgl">성인 빌리</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#333;">김명윤</div><div class="cnt-num"><span id="cnt-gimyeonguk">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#1a1a1a;">임선우</div><div class="cnt-num"><span id="cnt-imseonu">0</span></div><div class="cnt-label">회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#111;">고민건</div><div class="cnt-num"><span id="cnt-gomin">0</span></div><div class="cnt-label">회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#333;">김명윤</div><div class="cnt-num"><span id="cnt-gimyeonguk">0</span></div><div class="cnt-label" id="lbl-gimyeonguk">/ 47회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#1a1a1a;">임선우</div><div class="cnt-num"><span id="cnt-imseonu">0</span></div><div class="cnt-label" id="lbl-imseonu">/ 47회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#111;">고민건</div><div class="cnt-num"><span id="cnt-gomin">0</span></div><div class="cnt-label" id="lbl-gomin">/ 29회</div></div>
     </div>
     <div class="cnt-total-box">
       <div class="cnt-total-card">
         <div class="cnt-name">TOTAL</div>
-        <div class="cnt-num"><span id="cnt-total">0</span><span class="cnt-total-of">/123</span></div>
+        <div class="cnt-num"><span id="cnt-total">0</span><span class="cnt-total-of">/ 123회</span></div>
         <div class="cnt-label">회</div>
       </div>
     </div>
@@ -1996,6 +1995,7 @@ function importData(e){
   reader.readAsText(file);e.target.value='';
 }
 
+var ACTOR_TOTALS={seungju:26,jihu:23,wujin:25,yoonu:24,iseojun:26,iruree:26,hyobin:24,yunho:22,kimyeon:33,bagheesol:32,kimseoyun:33,jeongsuwon:62,jeonsoomi:61,choijeonggeun:50,choitongwon:73,parkjungja:41,mingyeongok:41,honghooni:41,gimyeonguk:47,imseonu:47,gomin:29};
 function updateCounting(){
   var ak=Object.keys(ACTOR_NAMES).filter(function(k){return k!=='';});
   var cnt={};ak.forEach(function(k){cnt[k]=0;});var total=0;
@@ -2008,7 +2008,15 @@ function updateCounting(){
       total++;
     }
   });
-  ak.forEach(function(k){var el=document.getElementById('cnt-'+k);if(el)el.textContent=cnt[k]||0;});
+  ak.forEach(function(k){
+    var numEl=document.getElementById('cnt-'+k);
+    var lblEl=document.getElementById('lbl-'+k);
+    if(numEl)numEl.textContent=cnt[k]||0;
+    if(lblEl){
+      var tot=ACTOR_TOTALS[k]||0;
+      lblEl.textContent='/ '+tot+'회';
+    }
+  });
   document.getElementById('cnt-total').textContent=total;
 }
 
