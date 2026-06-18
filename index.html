@@ -2247,8 +2247,7 @@ function renderTags(sid){
     var c=COLORS[Math.min((cnt[key]||1),5)-1];
     var tag=document.createElement('span');tag.className='seat-tag';
     tag.style.cssText='background:'+c.bg+';color:white;border:1px solid '+c.border+';';
-    var p=key.split('-');
-    tag.innerHTML=p[0]+'층 '+p[1]+'열 '+p[2]+'번 <span style="font-size:7px;opacity:.8">×</span>';
+    tag.innerHTML=key+' <span style="font-size:7px;opacity:.8">×</span>';
     tag.onclick=(function(s,k){return function(){removeSeat(s,k);};})(sid,key);
     el.appendChild(tag);
   });
@@ -2261,7 +2260,7 @@ function copyCast(sid){
   var time=(rowEl.querySelector('.cell.time')||{}).textContent||'';
   var info=SHOW_INFO[sid]||{};
   function get(k){return ACTOR_NAMES[k]||k||'추후공지';}
-  var seatArr=(showSeats[sid]||[]).map(function(k){var p=k.split('-');return p[0]+'층 '+p[1]+'열 '+p[2]+'번';});
+  var seatArr=(showSeats[sid]||[]).slice();
   var text='🩰 뮤지컬 빌리 엘리어트\n'
     +'📅 '+date.trim()+' ('+day.trim()+') '+time.trim()+'\n'
     +get(info.billy)+' / '+get(info.michael)+' / '+get(info.debbie)+' / '+get(info.mrs)+' / '+get(info.dad)+' / '+get(info.grandma)+' / '+get(info.adult);
