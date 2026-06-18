@@ -83,18 +83,18 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 /* 테이블 */
 .table-wrap{max-width:760px;margin:0 auto;background:white;border-top:2px solid var(--red);border-bottom:2px solid var(--red);overflow-x:auto;-webkit-overflow-scrolling:touch;}
 .table-header{display:grid;grid-template-columns:30px 18px 24px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 44px 16px;background:#111;padding:6px 6px;gap:1px;align-items:center;min-width:440px;}
-.th{font-size:6.5px;font-weight:900;color:white;text-align:center;letter-spacing:0px;text-transform:uppercase;}
+.th{font-size:8px;font-weight:900;color:white;text-align:center;letter-spacing:0px;text-transform:uppercase;}
 .row{display:grid;grid-template-columns:30px 18px 24px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 44px 16px;padding:4px 6px;gap:1px;border-top:1px solid rgba(0,0,0,0.06);align-items:start;min-width:440px;}
 .row.hidden{display:none;}
 .row.row-seungju{background:rgba(212,43,43,0.05);}
 .row.row-jihu   {background:rgba(212,43,43,0.03);}
 .row.row-wujin  {background:rgba(212,43,43,0.02);}
 .row.row-yoonu  {background:rgba(212,43,43,0.015);}
-.cell{font-size:7.5px;color:var(--ink);text-align:center;line-height:1.4;}
-.cell.date{font-weight:700;font-size:8px;text-align:left;letter-spacing:.1px;}
-.day-sat{color:#1a3a8a;font-weight:900;font-size:7px;}.day-sun{color:var(--red);font-weight:900;font-size:7px;}.day-wkd{color:var(--ink3);font-size:7px;}
-.cell.time{font-size:7px;color:var(--ink3);}
-.actor-badge{font-size:7px;font-weight:700;padding:1px 2px;border-radius:2px;display:inline-block;line-height:1.3;white-space:nowrap;text-align:center;vertical-align:top;}
+.cell{font-size:9px;color:var(--ink);text-align:center;line-height:1.4;}
+.cell.date{font-weight:700;font-size:10px;text-align:left;letter-spacing:.1px;}
+.day-sat{color:#1a3a8a;font-weight:900;font-size:8.5px;}.day-sun{color:var(--red);font-weight:900;font-size:8.5px;}.day-wkd{color:var(--ink3);font-size:8.5px;}
+.cell.time{font-size:8.5px;color:var(--ink3);}
+.actor-badge{font-size:9px;font-weight:700;padding:2px 3px;border-radius:2px;display:inline-block;line-height:1.3;white-space:nowrap;text-align:center;vertical-align:top;}
 /* ── 배우별 개성 파스텔 배지 ── */
 /* 빌리 */
 .badge-seungju  {background:#ffd6d6;color:#8b0000;border:1px solid #ffaaaa;}
@@ -124,9 +124,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .badge-gimyeonguk  {background:#f5d0e8;color:#660044;border:1px solid #dd88bb;}
 .badge-imseonu     {background:#d0e8f5;color:#003366;border:1px solid #77aad4;}
 .badge-gomin       {background:#f0f0d0;color:#444400;border:1px solid #cccc66;}
-.fb{display:block;background:var(--red);color:white;font-size:5px;font-weight:900;padding:0px 2px;border-radius:1px;margin-top:1px;text-align:center;letter-spacing:0px;}
+.fb{display:block;background:var(--red);color:white;font-size:6.5px;font-weight:900;padding:1px 3px;border-radius:1px;margin-top:2px;text-align:center;letter-spacing:0px;}
 .tba{font-size:8px;color:#bbb;font-style:italic;}
 .month-divider{padding:6px 6px;background:var(--red);font-size:11px;font-weight:900;color:white;letter-spacing:4px;text-transform:uppercase;min-width:480px;}
+.event-tag{display:block;font-size:7px;font-weight:600;color:#c05000;opacity:0.85;margin-top:2px;white-space:nowrap;text-decoration:none;line-height:1.3;}
+.event-tag:hover{opacity:1;text-decoration:underline;}
 .no-show{padding:4px 6px;background:rgba(0,0,0,.02);font-size:9.5px;color:#ccc;text-align:center;border-top:1px solid rgba(0,0,0,.04);font-style:italic;min-width:480px;}
 .copy-btn{background:none;border:none;cursor:pointer;font-size:13px;padding:1px;display:flex;align-items:center;justify-content:center;width:100%;}
 .seat-cell{display:flex;flex-direction:column;gap:2px;}
@@ -222,6 +224,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     </div>
     <div class="hero-links">
       <a href="https://tickets.interpark.com/goods/26001001" target="_blank" class="hero-link">🎟 NOL티켓</a>
+      <a href="https://x.com/i_seensee/status/2036685259450839410?s=20" target="_blank" class="hero-link">🎁 재관람 혜택</a>
+      <a href="https://musicalseeya.com/seeyaplay/20/1239" target="_blank" class="hero-link">🔍 시야확인</a>
     </div>
   </div>
 </div>
@@ -388,7 +392,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s7')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s8" data-billy="wujin" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">4/19</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">4/19<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎫 스페셜티켓 증정</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진<span class="fb">첫공</span></span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -400,7 +404,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s8')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s9" data-billy="seungju" data-michael="iseojun" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">4/19</div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
+    <div class="cell date">4/19<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎫 스페셜티켓 증정</a></div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -413,7 +417,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">4월 20일 (월) — 공연 없음</div>
   <div class="row row-wujin" data-sid="s10" data-billy="wujin" data-michael="yunho" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">4/21</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">4/21<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎫 스페셜티켓 증정</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -425,7 +429,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s10')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s11" data-billy="jihu" data-michael="iseojun" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="gomin">
-    <div class="cell date">4/22</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">4/22<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎫 스페셜티켓 증정</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -437,7 +441,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s11')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s12" data-billy="yoonu" data-michael="hyobin" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">4/23</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">4/23<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎫 스페셜티켓 증정</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -608,7 +612,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">5월 4일 (월) — 공연 없음</div>
   <div class="row row-wujin" data-sid="s26" data-billy="wujin" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/5</div><div class="cell day day-wkd">화</div><div class="cell time">14:00</div>
+    <div class="cell date">5/5<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎉 어린이날 포춘쿠키 증정</a></div><div class="cell day day-wkd">화</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -620,7 +624,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s26')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s27" data-billy="jihu" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/5</div><div class="cell day day-wkd">화</div><div class="cell time">19:00</div>
+    <div class="cell date">5/5<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎉 어린이날 포춘쿠키 증정</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -656,7 +660,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s29')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s30" data-billy="yoonu" data-michael="hyobin" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">5/8</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">5/8<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎂 어른이날 포춘쿠키 증정</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -717,7 +721,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">5월 11일 (월) — 공연 없음</div>
   <div class="row row-yoonu" data-sid="s35" data-billy="yoonu" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/12</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">5/12<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -729,7 +733,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s35')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s36" data-billy="wujin" data-michael="iseojun" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">5/13</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">5/13<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -741,7 +745,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s36')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s37" data-billy="jihu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">5/14</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">5/14<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -753,7 +757,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s37')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s38" data-billy="seungju" data-michael="yunho" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="gimyeonguk">
-    <div class="cell date">5/15</div><div class="cell day day-wkd">금</div><div class="cell time">14:30</div>
+    <div class="cell date">5/15<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-wkd">금</div><div class="cell time">14:30</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -765,7 +769,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s38')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s39" data-billy="wujin" data-michael="iruree" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">5/15</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">5/15<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -777,7 +781,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s39')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s40" data-billy="jihu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">5/16</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">5/16<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -789,7 +793,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s40')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s41" data-billy="yoonu" data-michael="iseojun" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">5/16</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">5/16<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -801,7 +805,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s41')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s42" data-billy="seungju" data-michael="yunho" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">5/17</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">5/17<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">⭐ 더블적립</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -814,7 +818,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">5월 18일 (월) — 공연 없음</div>
   <div class="row row-wujin" data-sid="s43" data-billy="wujin" data-michael="yunho" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">5/19</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">5/19<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -826,7 +830,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s43')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s44" data-billy="jihu" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="honghooni" data-adult="gomin">
-    <div class="cell date">5/20</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">5/20<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -838,7 +842,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s44')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s45" data-billy="seungju" data-michael="iruree" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="mingyeongok" data-adult="gomin">
-    <div class="cell date">5/21</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">5/21<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -850,7 +854,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s45')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s46" data-billy="yoonu" data-michael="yunho" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/22</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">5/22<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -862,7 +866,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s46')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s47" data-billy="wujin" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">5/23</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">5/23<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -874,7 +878,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s47')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s48" data-billy="jihu" data-michael="iseojun" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">5/23</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">5/23<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -886,7 +890,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s48')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s49" data-billy="seungju" data-michael="yunho" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/24</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">5/24<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -898,7 +902,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s49')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s50" data-billy="yoonu" data-michael="hyobin" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">5/24</div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
+    <div class="cell date">5/24<a class="event-tag" href="https://x.com/i_seensee/status/2036685762679480758?s=20" target="_blank">🎬 커튼콜&커튼콜자랑대회</a></div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1202,7 +1206,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">6월 15일 (월) — 공연 없음</div>
   <div class="row row-seungju" data-sid="s75" data-billy="seungju" data-michael="iruree" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="mingyeongok" data-adult="gimyeonguk">
-    <div class="cell date">6/16</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">6/16<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1214,7 +1218,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s75')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s76" data-billy="jihu" data-michael="hyobin" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="gomin">
-    <div class="cell date">6/17</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">6/17<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1226,7 +1230,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s76')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s77" data-billy="yoonu" data-michael="yunho" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">6/18</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">6/18<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1238,7 +1242,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s77')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s78" data-billy="wujin" data-michael="iseojun" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="gomin">
-    <div class="cell date">6/19</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">6/19<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1250,7 +1254,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s78')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s79" data-billy="jihu" data-michael="yunho" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">6/20</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">6/20<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1262,7 +1266,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s79')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s80" data-billy="seungju" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">6/20</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">6/20<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1274,7 +1278,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s80')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s81" data-billy="yoonu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">6/21</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">6/21<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장&스페셜커튼콜</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1286,7 +1290,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s81')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s82" data-billy="wujin" data-michael="iseojun" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">6/21</div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
+    <div class="cell date">6/21<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🏠 홈커밍데이 스페셜 도장&스페셜커튼콜</a></div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1299,7 +1303,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">6월 22일 (월) — 공연 없음</div>
   <div class="row row-jihu" data-sid="s83" data-billy="jihu" data-michael="iseojun" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="mingyeongok" data-adult="gomin">
-    <div class="cell date">6/23</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">6/23<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1311,7 +1315,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s83')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s84" data-billy="yoonu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">6/24</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">6/24<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1323,7 +1327,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s84')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s85" data-billy="wujin" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">6/25</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">6/25<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1335,7 +1339,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s85')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s86" data-billy="seungju" data-michael="yunho" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">6/26</div><div class="cell day day-wkd">금</div><div class="cell time">14:30</div>
+    <div class="cell date">6/26<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">금</div><div class="cell time">14:30</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1347,7 +1351,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s86')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s87" data-billy="jihu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">6/26</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">6/26<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1359,7 +1363,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s87')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s88" data-billy="yoonu" data-michael="iseojun" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">6/27</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">6/27<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1371,7 +1375,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s88')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s89" data-billy="wujin" data-michael="iruree" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">6/27</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">6/27<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1383,7 +1387,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s89')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s90" data-billy="seungju" data-michael="yunho" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="gimyeonguk">
-    <div class="cell date">6/28</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">6/28<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1396,7 +1400,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">6월 29일 (월) — 공연 없음</div>
   <div class="row row-seungju" data-sid="s91" data-billy="seungju" data-michael="iruree" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">6/30</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">6/30<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1409,7 +1413,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="month-divider" id="div-7">7월</div>
   <div class="row row-wujin" data-sid="s92" data-billy="wujin" data-michael="iseojun" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="imseonu">
-    <div class="cell date">7/1</div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
+    <div class="cell date">7/1<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">수</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1421,7 +1425,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s92')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s93" data-billy="yoonu" data-michael="yunho" data-debbie="kimyeon" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">7/2</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">7/2<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1433,7 +1437,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s93')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s94" data-billy="jihu" data-michael="hyobin" data-debbie="bagheesol" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="gomin">
-    <div class="cell date">7/3</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">7/3<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1445,7 +1449,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s94')">🩰</button></div>
   </div>
   <div class="row row-seungju" data-sid="s95" data-billy="seungju" data-michael="yunho" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="gimyeonguk">
-    <div class="cell date">7/4</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">7/4<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-seungju">김승주</span></div>
     <div class="cell"><span class="actor-badge badge-yunho">지윤호</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1457,7 +1461,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s95')">🩰</button></div>
   </div>
   <div class="row row-yoonu" data-sid="s96" data-billy="yoonu" data-michael="iseojun" data-debbie="kimyeon" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="gimyeonguk">
-    <div class="cell date">7/4</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">7/4<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-yoonu">조윤우</span></div>
     <div class="cell"><span class="actor-badge badge-iseojun">이서준</span></div>
     <div class="cell"><span class="actor-badge badge-kimyeon">김예은</span></div>
@@ -1469,7 +1473,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s96')">🩰</button></div>
   </div>
   <div class="row row-wujin" data-sid="s97" data-billy="wujin" data-michael="hyobin" data-debbie="bagheesol" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">7/5</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">7/5<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="actor-badge badge-wujin">김우진</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-bagheesol">박예솔</span></div>
@@ -1481,7 +1485,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s97')">🩰</button></div>
   </div>
   <div class="row row-jihu" data-sid="s98" data-billy="jihu" data-michael="iruree" data-debbie="kimseoyun" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">7/5</div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
+    <div class="cell date">7/5<a class="event-tag" href="https://x.com/i_seensee/status/2048937792034709856?s=20" target="_blank">🌳 더럼마을 소원카드 이벤트</a></div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-iruree">이루리</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
@@ -1494,7 +1498,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   </div>
   <div class="no-show" data-noshow="1">7월 6일 (월) — 공연 없음</div>
   <div class="row " data-sid="s99" data-billy="" data-michael="" data-debbie="" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">7/7</div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
+    <div class="cell date">7/7<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🎁 럭키드로우 이벤트</a></div><div class="cell day day-wkd">화</div><div class="cell time">19:30</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1518,7 +1522,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s100')">🩰</button></div>
   </div>
   <div class="row " data-sid="s101" data-billy="" data-michael="" data-debbie="" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="mingyeongok" data-adult="imseonu">
-    <div class="cell date">7/9</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
+    <div class="cell date">7/9<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🎁 럭키드로우 이벤트</a></div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1530,7 +1534,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s101')">🩰</button></div>
   </div>
   <div class="row " data-sid="s102" data-billy="" data-michael="" data-debbie="" data-mrs="jeongsuwon" data-dad="choitongwon" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">7/10</div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
+    <div class="cell date">7/10<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🎁 럭키드로우 이벤트</a></div><div class="cell day day-wkd">금</div><div class="cell time">19:30</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1748,7 +1752,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s119')">🩰</button></div>
   </div>
   <div class="row " data-sid="s120" data-billy="" data-michael="" data-debbie="" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">7/25</div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
+    <div class="cell date">7/25<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🌟 빌리's 스페셜 도장 적립</a></div><div class="cell day day-sat">토</div><div class="cell time">14:00</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1760,7 +1764,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s120')">🩰</button></div>
   </div>
   <div class="row " data-sid="s121" data-billy="" data-michael="" data-debbie="" data-mrs="jeongsuwon" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="gimyeonguk">
-    <div class="cell date">7/25</div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
+    <div class="cell date">7/25<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🌟 빌리's 스페셜 도장 적립</a></div><div class="cell day day-sat">토</div><div class="cell time">19:00</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1772,7 +1776,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s121')">🩰</button></div>
   </div>
   <div class="row " data-sid="s122" data-billy="" data-michael="" data-debbie="" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">7/26</div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
+    <div class="cell date">7/26<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🌟 빌리's 스페셜 도장 적립</a></div><div class="cell day day-sun">일</div><div class="cell time">14:00</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -1784,7 +1788,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell"><button class="copy-btn" onclick="copyCast('s122')">🩰</button></div>
   </div>
   <div class="row " data-sid="s123" data-billy="" data-michael="" data-debbie="" data-mrs="jeonsoomi" data-dad="choitongwon" data-grandma="honghooni" data-adult="imseonu">
-    <div class="cell date">7/26</div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
+    <div class="cell date">7/26<a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🌟 빌리's 스페셜 도장 적립</a><a class="event-tag" href="https://x.com/i_seensee/status/2056993331251691580?s=20" target="_blank">🎭 Goodbye! 스페셜 커튼콜</a></div><div class="cell day day-sun">일</div><div class="cell time">19:00</div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
     <div class="cell"><span class="tba">추후 공지</span></div>
@@ -2294,6 +2298,7 @@ function applyFilter(){
     var show=true;
     Object.keys(sel).forEach(function(role){if(sel[role]&&r.dataset[role]!==sel[role])show=false;});
     r.classList.toggle('hidden',!show);
+
   });
   document.querySelectorAll('[data-noshow]').forEach(function(el){el.style.display=isAll?'':'none';});
   [5,6,7].forEach(function(m){
