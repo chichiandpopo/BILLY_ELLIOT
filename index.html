@@ -37,34 +37,35 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .actor-chip.active{outline:2.5px solid var(--ink);outline-offset:1px;}
 .actor-chip.pinned{outline:2px solid var(--red);outline-offset:2px;opacity:.75;}
 
-/* 빌리 칩 - 빨강 */
-.chip-seungju {background:#fdecea;color:#b51f1f;border-color:#f5b4b0;}
-.chip-jihu    {background:#fce2e2;color:#9e1818;border-color:#f0a0a0;}
-.chip-wujin   {background:#f8d8d8;color:#8a1010;border-color:#e89090;}
-.chip-yoonu   {background:#f5cece;color:#760808;border-color:#e08080;}
-/* 마이클 칩 - 네이비 */
-.chip-iseojun {background:#e8eef8;color:#1a3a8a;border-color:#b0c0e8;}
-.chip-iruree  {background:#e2e9f5;color:#142e78;border-color:#a0b4e0;}
-.chip-hyobin  {background:#dce3f0;color:#0e2268;border-color:#90a8d8;}
-.chip-yunho   {background:#d6dcea;color:#081858;border-color:#8090c8;}
-/* 데비 칩 - 그린 */
-.chip-kimyeon   {background:#e8f5ec;color:#1a6a34;border-color:#a8ddb8;}
-.chip-bagheesol {background:#e0f0e4;color:#145a28;border-color:#98d0a8;}
-.chip-kimseoyun {background:#d8ebdc;color:#0e4a20;border-color:#88c498;}
-/* Mrs 윌킨슨 - 핑크/다크레드 */
-.chip-jeongsuwon {background:#fce8f0;color:#a81a50;border-color:#f0a8c8;}
-.chip-jeonsoomi  {background:#f8dce8;color:#90143e;border-color:#e898b8;}
-/* 아빠 - 앰버 */
-.chip-choijeonggeun {background:#fef5e4;color:#8a5c00;border-color:#f8d888;}
-.chip-choitongwon   {background:#faf0d8;color:#784e00;border-color:#f0c870;}
-/* 할머니 - 퍼플 */
-.chip-parkjungja  {background:#f2eafa;color:#5a1a8a;border-color:#d0b0f0;}
-.chip-mingyeongok {background:#ece0f8;color:#4a1478;border-color:#c0a0e8;}
-.chip-honghooni   {background:#e8d8f5;color:#3c0e68;border-color:#b090e0;}
-/* 성인빌리 - 그레이 */
-.chip-gimyeonguk {background:#ebebeb;color:#222;border-color:#ccc;}
-.chip-imseonu    {background:#e5e5e5;color:#1a1a1a;border-color:#bbb;}
-.chip-gomin      {background:#dfdfdf;color:#111;border-color:#aaa;}
+/* ── 배우별 개성 파스텔 칩 ── */
+/* 빌리 */
+.chip-seungju {background:#ffd6d6;color:#8b0000;border-color:#ffaaaa;}
+.chip-jihu    {background:#ffe4cc;color:#7a3300;border-color:#ffbb88;}
+.chip-wujin   {background:#fff3cc;color:#665500;border-color:#ffe066;}
+.chip-yoonu   {background:#e8f5d0;color:#3a5500;border-color:#b8d870;}
+/* 마이클 */
+.chip-iseojun {background:#d0eaff;color:#003d7a;border-color:#80bfff;}
+.chip-iruree  {background:#d0f0f8;color:#004466;border-color:#70d4f0;}
+.chip-hyobin  {background:#d8d0ff;color:#2a0080;border-color:#aa88ff;}
+.chip-yunho   {background:#f0d0ff;color:#550080;border-color:#d080ff;}
+/* 데비 */
+.chip-kimyeon   {background:#d0f5e8;color:#005533;border-color:#70ddb0;}
+.chip-bagheesol {background:#d0f0d0;color:#1a5500;border-color:#70cc70;}
+.chip-kimseoyun {background:#e8f8d0;color:#3a5500;border-color:#a8d860;}
+/* Mrs 윌킨슨 */
+.chip-jeongsuwon {background:#ffd0e8;color:#880044;border-color:#ff88bb;}
+.chip-jeonsoomi  {background:#ffd0d8;color:#880022;border-color:#ff8899;}
+/* 아빠 */
+.chip-choijeonggeun {background:#ffe0d0;color:#6a2200;border-color:#ffaa77;}
+.chip-choitongwon   {background:#fff0d0;color:#664400;border-color:#ffcc77;}
+/* 할머니 */
+.chip-parkjungja  {background:#e0d0ff;color:#330088;border-color:#aa77ff;}
+.chip-mingyeongok {background:#d8e8ff;color:#002288;border-color:#88aaff;}
+.chip-honghooni   {background:#d0f4f4;color:#005566;border-color:#66cccc;}
+/* 성인빌리 */
+.chip-gimyeonguk {background:#f5d0e8;color:#660044;border-color:#dd88bb;}
+.chip-imseonu    {background:#d0e8f5;color:#003366;border-color:#77aad4;}
+.chip-gomin      {background:#f0f0d0;color:#444400;border-color:#cccc66;}
 
 .filter-row-top{display:flex;justify-content:center;margin:0 auto 8px;max-width:760px;padding:0 16px;}
 .btn-all{padding:6px 20px;border-radius:2px;font-size:11px;font-weight:900;cursor:pointer;border:2px solid var(--ink);background:white;color:var(--ink);font-family:'Noto Sans KR',sans-serif;letter-spacing:1px;}
@@ -94,27 +95,35 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .day-sat{color:#1a3a8a;font-weight:900;font-size:7.5px;}.day-sun{color:var(--red);font-weight:900;font-size:7.5px;}.day-wkd{color:var(--ink3);font-size:7.5px;}
 .cell.time{font-size:7.5px;color:var(--ink3);}
 .actor-badge{font-size:7.5px;font-weight:700;padding:1px 3px;border-radius:2px;display:inline-block;line-height:1.3;white-space:nowrap;text-align:center;vertical-align:top;}
-.badge-seungju  {background:#fdecea;color:#b51f1f;border:1px solid #f5b4b0;}
-.badge-jihu     {background:#fce2e2;color:#9e1818;border:1px solid #f0a0a0;}
-.badge-wujin    {background:#f8d8d8;color:#8a1010;border:1px solid #e89090;}
-.badge-yoonu    {background:#f5cece;color:#760808;border:1px solid #e08080;}
-.badge-iseojun  {background:#e8eef8;color:#1a3a8a;border:1px solid #b0c0e8;}
-.badge-iruree   {background:#e2e9f5;color:#142e78;border:1px solid #a0b4e0;}
-.badge-hyobin   {background:#dce3f0;color:#0e2268;border:1px solid #90a8d8;}
-.badge-yunho    {background:#d6dcea;color:#081858;border:1px solid #8090c8;}
-.badge-kimyeon   {background:#e8f5ec;color:#1a6a34;border:1px solid #a8ddb8;}
-.badge-bagheesol {background:#e0f0e4;color:#145a28;border:1px solid #98d0a8;}
-.badge-kimseoyun {background:#d8ebdc;color:#0e4a20;border:1px solid #88c498;}
-.badge-jeongsuwon{background:#fce8f0;color:#a81a50;border:1px solid #f0a8c8;}
-.badge-jeonsoomi {background:#f8dce8;color:#90143e;border:1px solid #e898b8;}
-.badge-choijeonggeun{background:#fef5e4;color:#8a5c00;border:1px solid #f8d888;}
-.badge-choitongwon  {background:#faf0d8;color:#784e00;border:1px solid #f0c870;}
-.badge-parkjungja  {background:#f2eafa;color:#5a1a8a;border:1px solid #d0b0f0;}
-.badge-mingyeongok {background:#ece0f8;color:#4a1478;border:1px solid #c0a0e8;}
-.badge-honghooni   {background:#e8d8f5;color:#3c0e68;border:1px solid #b090e0;}
-.badge-gimyeonguk  {background:#ebebeb;color:#222;border:1px solid #ccc;}
-.badge-imseonu     {background:#e5e5e5;color:#1a1a1a;border:1px solid #bbb;}
-.badge-gomin       {background:#dfdfdf;color:#111;border:1px solid #aaa;}
+/* ── 배우별 개성 파스텔 배지 ── */
+/* 빌리 */
+.badge-seungju  {background:#ffd6d6;color:#8b0000;border:1px solid #ffaaaa;}
+.badge-jihu     {background:#ffe4cc;color:#7a3300;border:1px solid #ffbb88;}
+.badge-wujin    {background:#fff3cc;color:#665500;border:1px solid #ffe066;}
+.badge-yoonu    {background:#e8f5d0;color:#3a5500;border:1px solid #b8d870;}
+/* 마이클 */
+.badge-iseojun  {background:#d0eaff;color:#003d7a;border:1px solid #80bfff;}
+.badge-iruree   {background:#d0f0f8;color:#004466;border:1px solid #70d4f0;}
+.badge-hyobin   {background:#d8d0ff;color:#2a0080;border:1px solid #aa88ff;}
+.badge-yunho    {background:#f0d0ff;color:#550080;border:1px solid #d080ff;}
+/* 데비 */
+.badge-kimyeon   {background:#d0f5e8;color:#005533;border:1px solid #70ddb0;}
+.badge-bagheesol {background:#d0f0d0;color:#1a5500;border:1px solid #70cc70;}
+.badge-kimseoyun {background:#e8f8d0;color:#3a5500;border:1px solid #a8d860;}
+/* Mrs 윌킨슨 */
+.badge-jeongsuwon{background:#ffd0e8;color:#880044;border:1px solid #ff88bb;}
+.badge-jeonsoomi {background:#ffd0d8;color:#880022;border:1px solid #ff8899;}
+/* 아빠 */
+.badge-choijeonggeun{background:#ffe0d0;color:#6a2200;border:1px solid #ffaa77;}
+.badge-choitongwon  {background:#fff0d0;color:#664400;border:1px solid #ffcc77;}
+/* 할머니 */
+.badge-parkjungja  {background:#e0d0ff;color:#330088;border:1px solid #aa77ff;}
+.badge-mingyeongok {background:#d8e8ff;color:#002288;border:1px solid #88aaff;}
+.badge-honghooni   {background:#d0f4f4;color:#005566;border:1px solid #66cccc;}
+/* 성인빌리 */
+.badge-gimyeonguk  {background:#f5d0e8;color:#660044;border:1px solid #dd88bb;}
+.badge-imseonu     {background:#d0e8f5;color:#003366;border:1px solid #77aad4;}
+.badge-gomin       {background:#f0f0d0;color:#444400;border:1px solid #cccc66;}
 .fb{display:block;background:var(--red);color:white;font-size:5.5px;font-weight:900;padding:1px 2px;border-radius:1px;margin-top:1px;text-align:center;letter-spacing:0px;}
 .tba{font-size:8px;color:#bbb;font-style:italic;}
 .month-divider{padding:8px 10px;background:var(--red);font-size:11px;font-weight:900;color:white;letter-spacing:4px;text-transform:uppercase;min-width:480px;}
@@ -1789,49 +1798,49 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 </div><!-- /table-wrap -->
 
 <div class="settle-wrap">
-  <div class="settle-title">2026 Billy Elliot Settlement</div>
+  <div class="settle-title">2026 Billy Elliot</div>
   <div class="counting-section">
     <div class="cgl">빌리</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#b51f1f;">김승주</div><div class="cnt-num"><span id="cnt-seungju">0</span></div><div class="cnt-label" id="lbl-seungju">/ 26회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#9e1818;">박지후</div><div class="cnt-num"><span id="cnt-jihu">0</span></div><div class="cnt-label" id="lbl-jihu">/ 23회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#8a1010;">김우진</div><div class="cnt-num"><span id="cnt-wujin">0</span></div><div class="cnt-label" id="lbl-wujin">/ 25회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#760808;">조윤우</div><div class="cnt-num"><span id="cnt-yoonu">0</span></div><div class="cnt-label" id="lbl-yoonu">/ 24회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#8b0000">김승주</div><div class="cnt-num"><span id="cnt-seungju">0</span></div><div class="cnt-label" id="lbl-seungju">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#7a3300">박지후</div><div class="cnt-num"><span id="cnt-jihu">0</span></div><div class="cnt-label" id="lbl-jihu">/ 23회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#665500">김우진</div><div class="cnt-num"><span id="cnt-wujin">0</span></div><div class="cnt-label" id="lbl-wujin">/ 25회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#3a5500">조윤우</div><div class="cnt-num"><span id="cnt-yoonu">0</span></div><div class="cnt-label" id="lbl-yoonu">/ 24회</div></div>
     </div>
     <div class="cgl">마이클</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#1a3a8a;">이서준</div><div class="cnt-num"><span id="cnt-iseojun">0</span></div><div class="cnt-label" id="lbl-iseojun">/ 26회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#142e78;">이루리</div><div class="cnt-num"><span id="cnt-iruree">0</span></div><div class="cnt-label" id="lbl-iruree">/ 26회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#0e2268;">김효빈</div><div class="cnt-num"><span id="cnt-hyobin">0</span></div><div class="cnt-label" id="lbl-hyobin">/ 24회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#081858;">지윤호</div><div class="cnt-num"><span id="cnt-yunho">0</span></div><div class="cnt-label" id="lbl-yunho">/ 22회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#003d7a">이서준</div><div class="cnt-num"><span id="cnt-iseojun">0</span></div><div class="cnt-label" id="lbl-iseojun">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#004466">이루리</div><div class="cnt-num"><span id="cnt-iruree">0</span></div><div class="cnt-label" id="lbl-iruree">/ 26회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#2a0080">김효빈</div><div class="cnt-num"><span id="cnt-hyobin">0</span></div><div class="cnt-label" id="lbl-hyobin">/ 24회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#550080">지윤호</div><div class="cnt-num"><span id="cnt-yunho">0</span></div><div class="cnt-label" id="lbl-yunho">/ 22회</div></div>
     </div>
     <div class="cgl">데비</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#1a6a34;">김예은</div><div class="cnt-num"><span id="cnt-kimyeon">0</span></div><div class="cnt-label" id="lbl-kimyeon">/ 33회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#145a28;">박예솔</div><div class="cnt-num"><span id="cnt-bagheesol">0</span></div><div class="cnt-label" id="lbl-bagheesol">/ 32회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#0e4a20;">김서윤</div><div class="cnt-num"><span id="cnt-kimseoyun">0</span></div><div class="cnt-label" id="lbl-kimseoyun">/ 33회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#005533">김예은</div><div class="cnt-num"><span id="cnt-kimyeon">0</span></div><div class="cnt-label" id="lbl-kimyeon">/ 33회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#1a5500">박예솔</div><div class="cnt-num"><span id="cnt-bagheesol">0</span></div><div class="cnt-label" id="lbl-bagheesol">/ 32회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#3a5500">김서윤</div><div class="cnt-num"><span id="cnt-kimseoyun">0</span></div><div class="cnt-label" id="lbl-kimseoyun">/ 33회</div></div>
     </div>
     <div class="cgl">Mrs. 윌킨슨</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#a81a50;">최정원</div><div class="cnt-num"><span id="cnt-jeongsuwon">0</span></div><div class="cnt-label" id="lbl-jeongsuwon">/ 62회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#90143e;">전수미</div><div class="cnt-num"><span id="cnt-jeonsoomi">0</span></div><div class="cnt-label" id="lbl-jeonsoomi">/ 61회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#880044">최정원</div><div class="cnt-num"><span id="cnt-jeongsuwon">0</span></div><div class="cnt-label" id="lbl-jeongsuwon">/ 62회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#880022">전수미</div><div class="cnt-num"><span id="cnt-jeonsoomi">0</span></div><div class="cnt-label" id="lbl-jeonsoomi">/ 61회</div></div>
     </div>
     <div class="cgl">아빠</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#8a5c00;">조정근</div><div class="cnt-num"><span id="cnt-choijeonggeun">0</span></div><div class="cnt-label" id="lbl-choijeonggeun">/ 50회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#784e00;">최동원</div><div class="cnt-num"><span id="cnt-choitongwon">0</span></div><div class="cnt-label" id="lbl-choitongwon">/ 73회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#6a2200">조정근</div><div class="cnt-num"><span id="cnt-choijeonggeun">0</span></div><div class="cnt-label" id="lbl-choijeonggeun">/ 50회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#664400">최동원</div><div class="cnt-num"><span id="cnt-choitongwon">0</span></div><div class="cnt-label" id="lbl-choitongwon">/ 73회</div></div>
     </div>
     <div class="cgl">할머니</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#5a1a8a;">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label" id="lbl-parkjungja">/ 41회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#4a1478;">민경옥</div><div class="cnt-num"><span id="cnt-mingyeongok">0</span></div><div class="cnt-label" id="lbl-mingyeongok">/ 41회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#3c0e68;">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label" id="lbl-honghooni">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#330088">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label" id="lbl-parkjungja">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#002288">민경옥</div><div class="cnt-num"><span id="cnt-mingyeongok">0</span></div><div class="cnt-label" id="lbl-mingyeongok">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#005566">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label" id="lbl-honghooni">/ 41회</div></div>
     </div>
     <div class="cgl">성인 빌리</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#333;">김명윤</div><div class="cnt-num"><span id="cnt-gimyeonguk">0</span></div><div class="cnt-label" id="lbl-gimyeonguk">/ 47회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#1a1a1a;">임선우</div><div class="cnt-num"><span id="cnt-imseonu">0</span></div><div class="cnt-label" id="lbl-imseonu">/ 47회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#111;">고민건</div><div class="cnt-num"><span id="cnt-gomin">0</span></div><div class="cnt-label" id="lbl-gomin">/ 29회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#660044">김명윤</div><div class="cnt-num"><span id="cnt-gimyeonguk">0</span></div><div class="cnt-label" id="lbl-gimyeonguk">/ 47회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#003366">임선우</div><div class="cnt-num"><span id="cnt-imseonu">0</span></div><div class="cnt-label" id="lbl-imseonu">/ 47회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#444400">고민건</div><div class="cnt-num"><span id="cnt-gomin">0</span></div><div class="cnt-label" id="lbl-gomin">/ 29회</div></div>
     </div>
     <div class="cnt-total-box">
       <div class="cnt-total-card">
