@@ -1728,14 +1728,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     <div class="cell seat-cell"><div style="display:flex;gap:2px;"><input class="seat-input" style="flex:1;min-width:0;" id="inp-s117" placeholder="" autocomplete="off"><button onclick="confirmSeat('s117')" style="flex-shrink:0;background:var(--red);color:white;border:none;border-radius:2px;font-size:7px;font-weight:900;padding:2px 3px;cursor:pointer;">✓</button></div><div class="seat-tags" id="tags-s117"></div></div>
     <div class="cell"><button class="copy-btn" onclick="copyCast('s117')">🩰</button></div>
   </div>
-  <div class="row row-jihu" data-sid="s118" data-billy="jihu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="parkjungja" data-adult="imseonu">
+  <div class="row row-jihu" data-sid="s118" data-billy="jihu" data-michael="hyobin" data-debbie="kimseoyun" data-mrs="jeonsoomi" data-dad="choijeonggeun" data-grandma="honghooni" data-adult="imseonu">
     <div class="cell date">7/23</div><div class="cell day day-wkd">목</div><div class="cell time">19:30</div>
     <div class="cell"><span class="actor-badge badge-jihu">박지후</span></div>
     <div class="cell"><span class="actor-badge badge-hyobin">김효빈</span></div>
     <div class="cell"><span class="actor-badge badge-kimseoyun">김서윤</span></div>
     <div class="cell"><span class="actor-badge badge-jeonsoomi">전수미</span></div>
     <div class="cell"><span class="actor-badge badge-choijeonggeun">조정근</span></div>
-    <div class="cell"><span class="actor-badge badge-parkjungja">박정자</span></div>
+    <div class="cell"><span class="actor-badge badge-honghooni">홍윤희</span></div>
     <div class="cell"><span class="actor-badge badge-imseonu">임선우</span></div>
     <div class="cell seat-cell"><div style="display:flex;gap:2px;"><input class="seat-input" style="flex:1;min-width:0;" id="inp-s118" placeholder="" autocomplete="off"><button onclick="confirmSeat('s118')" style="flex-shrink:0;background:var(--red);color:white;border:none;border-radius:2px;font-size:7px;font-weight:900;padding:2px 3px;cursor:pointer;">✓</button></div><div class="seat-tags" id="tags-s118"></div></div>
     <div class="cell"><button class="copy-btn" onclick="copyCast('s118')">🩰</button></div>
@@ -1837,9 +1837,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
     </div>
     <div class="cgl">할머니</div>
     <div class="counting-box">
-      <div class="count-card"><div class="cnt-name" style="color:#330088">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label" id="lbl-parkjungja">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#330088">박정자</div><div class="cnt-num"><span id="cnt-parkjungja">0</span></div><div class="cnt-label" id="lbl-parkjungja">/ 40회</div></div>
       <div class="count-card"><div class="cnt-name" style="color:#002288">민경옥</div><div class="cnt-num"><span id="cnt-mingyeongok">0</span></div><div class="cnt-label" id="lbl-mingyeongok">/ 41회</div></div>
-      <div class="count-card"><div class="cnt-name" style="color:#005566">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label" id="lbl-honghooni">/ 41회</div></div>
+      <div class="count-card"><div class="cnt-name" style="color:#005566">홍윤희</div><div class="cnt-num"><span id="cnt-honghooni">0</span></div><div class="cnt-label" id="lbl-honghooni">/ 42회</div></div>
     </div>
     <div class="cgl">성인 빌리</div>
     <div class="counting-box">
@@ -2009,7 +2009,7 @@ function importData(e){
   reader.readAsText(file);e.target.value='';
 }
 
-var ACTOR_TOTALS={seungju:34,iseojun:34,kimseoyun:41,jeongsuwon:62,choijeonggeun:50,parkjungja:41,gimyeonguk:47,yoonu:31,yunho:24,kimyeon:41,jeonsoomi:61,choitongwon:73,honghooni:41,imseonu:47,jihu:30,iruree:33,bagheesol:41,mingyeongok:41,gomin:29,hyobin:32,wujin:28};
+var ACTOR_TOTALS={seungju:34,iseojun:34,kimseoyun:41,jeongsuwon:62,choijeonggeun:50,parkjungja:40,gimyeonguk:47,yoonu:31,yunho:24,kimyeon:41,jeonsoomi:61,choitongwon:73,honghooni:42,imseonu:47,jihu:30,iruree:33,bagheesol:41,mingyeongok:41,gomin:29,hyobin:32,wujin:28};
 function updateCounting(){
   var ak=Object.keys(ACTOR_NAMES).filter(function(k){return k!=='';});
   var cnt={};ak.forEach(function(k){cnt[k]=0;});var total=0;
