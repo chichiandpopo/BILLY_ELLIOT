@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -210,9 +211,17 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
   .actor-badge{font-size:10px;padding:2px 5px;display:inline-block;text-align:center;}.fb{font-size:7.5px;display:block;}
   .count-card .cnt-name{font-size:10px;}.count-card .cnt-num{font-size:22px;}
 }
+.archive-btn{position:fixed;top:14px;right:14px;z-index:999;background:rgba(255,255,255,0.92);border:1.5px solid var(--red);border-radius:20px;padding:6px 14px;font-size:11px;font-weight:700;color:var(--red);text-decoration:none;backdrop-filter:blur(6px);box-shadow:0 2px 10px rgba(212,43,43,0.15);white-space:nowrap;transition:all .15s;}
+.archive-btn:hover{background:var(--red);color:white;}
+.save-btn{position:fixed;top:48px;right:14px;z-index:999;background:rgba(255,255,255,0.92);border:1.5px solid var(--red);border-radius:20px;padding:6px 14px;font-size:11px;font-weight:700;color:var(--red);text-decoration:none;backdrop-filter:blur(6px);box-shadow:0 2px 10px rgba(212,43,43,0.15);white-space:nowrap;transition:all .15s;cursor:pointer;font-family:'Noto Sans KR',sans-serif;}
+.save-btn:hover{background:var(--red);color:white;}
+.save-btn:disabled{opacity:.6;cursor:wait;}
 </style>
 </head>
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<a href="https://chichiandpopo.github.io/stage_archive/" target="_blank" class="archive-btn">🎭 관극 아카이브</a>
+<button class="save-btn" onclick="saveSettlement()" id="saveBtn">📸 정산판 저장</button>
 
 <div class="hero">
   <div class="hero-inner">
@@ -1888,6 +1897,53 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 <div class="footer">* 상기 스케줄은 배우 및 제작사 사정에 따라 사전 공지 없이 변경될 수 있습니다.<br>* 7/7 이후 빌리·마이클 역은 추후 공지 예정입니다.</div>
 
 <script>
+function saveSettlement(){
+  var btn=document.getElementById('saveBtn');
+  btn.disabled=true;
+  btn.textContent='⏳ 저장 중...';
+
+  // 정산 영역: settle-title + counting-section + seat-map-section
+  var settle=document.querySelector('.settle-wrap');
+  var seatMap=document.querySelector('.seat-map-section');
+  if(!settle||!seatMap){
+    alert('정산 영역을 찾을 수 없어요.');
+    btn.disabled=false;btn.textContent='📸 정산판 저장';
+    return;
+  }
+
+  // 두 영역을 임시 wrapper로 묶어서 캡처
+  var wrapper=document.createElement('div');
+  wrapper.style.cssText='background:#f5f2ed;padding:20px;display:inline-block;min-width:'+settle.offsetWidth+'px;';
+
+  var s1=settle.cloneNode(true);
+  var s2=seatMap.cloneNode(true);
+  wrapper.appendChild(s1);
+  wrapper.appendChild(s2);
+  wrapper.style.position='absolute';
+  wrapper.style.left='-9999px';
+  wrapper.style.top='0';
+  document.body.appendChild(wrapper);
+
+  html2canvas(wrapper,{
+    backgroundColor:'#f5f2ed',
+    scale:2,
+    useCORS:true,
+    logging:false
+  }).then(function(canvas){
+    document.body.removeChild(wrapper);
+    var link=document.createElement('a');
+    link.download='빌리엘리어트_정산.jpg';
+    link.href=canvas.toDataURL('image/jpeg',0.95);
+    link.click();
+    btn.disabled=false;btn.textContent='📸 정산판 저장';
+  }).catch(function(e){
+    document.body.removeChild(wrapper);
+    console.error(e);
+    alert('저장 중 오류가 발생했어요 ㅠㅠ');
+    btn.disabled=false;btn.textContent='📸 정산판 저장';
+  });
+}
+
 const ACTOR_NAMES={
   seungju:'김승주',jihu:'박지후',wujin:'김우진',yoonu:'조윤우',
   iseojun:'이서준',iruree:'이루리',hyobin:'김효빈',yunho:'지윤호',
